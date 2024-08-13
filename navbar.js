@@ -1,18 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbarContainer = document.getElementById('navbar');
 
-  fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      navbarContainer.innerHTML = data;
-      const currentPage = window.location.pathname.split('/').pop();
-      const links = document.querySelectorAll('.nav-link');
+  // HTML content for the navbar
+  const navbarHTML = `
+    <div class="sidebar bg-dark p-4">
+      <h2 class="text-center" id="nav-header">Learn...</h2>
+      <div class="nav flex-column nav-pills" id="myTab" role="tablist">
+        <a class="nav-link active nav-item" href="html.html" role="tab" aria-selected="true">HTML</a>
+        <a class="nav-link nav-item" href="css.html" role="tab" aria-selected="false">CSS</a>
+        <a class="nav-link nav-item" href="javascript.html" role="tab" aria-selected="false">JavaScript</a>
+        <a class="nav-link nav-item" href="bootstrap.html" role="tab" aria-selected="false">Bootstrap</a>
+        <a class="nav-link nav-item" href="react.html" role="tab" aria-selected="false">React</a>
+      </div>
+    </div>
+  `;
 
-      links.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-          link.classList.add('active');
-        }
-      });
-    })
-    .catch(error => console.error('Error loading navbar:', error));
+  // Insert the navbar HTML into the DOM
+  navbarContainer.innerHTML = navbarHTML;
+
+  // Highlight the active link based on the current page
+  const currentPage = window.location.pathname.split('/').pop();
+  const links = document.querySelectorAll('.nav-link');
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
 });
