@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Notes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <div id="navbar"></div>
+    <div class="content p-4" id="main-doc">
+      <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
+        <h2>HTML Notes</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages and web applications.</p>
+        <p>Below you can see an example of a boilerplate HTML document that includes various elements. HTML elements
+          typically have an opening and closing tag with content in between.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;HTML 5 Boilerplate&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"&gt;
+  &lt;link rel="icon" href="images/favicon"&gt;
+  &lt;meta property="og:title" content="HTML 5 Boilerplate"&gt;
+  &lt;meta property="og:type" content="website"&gt;
+  &lt;meta property="og:url" content="http://example.com"&gt;
+  &lt;meta property="og:image" content="http://example.com/image.jpg"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;My First Heading&lt;/h1&gt;
+  &lt;p&gt;My first paragraph.&lt;/p&gt;
+  &lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h3>Common HTML Elements</h3>
+        <ul>
+          <li><code><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">&lt;html&gt;</a></code> is the root element of an HTML page</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank">&lt;head&gt;</a></code> contains meta-information about the document, such as the title, meta tags, and links to stylesheets</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank">&lt;title&gt;</a></code> sets the title of the document, which is displayed in the browser’s title bar or tab</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank">&lt;body&gt;</a></code> contains the content of the document, such as text, images, links, etc.</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">&lt;div&gt;</a></code> represents a division of an HTML document</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank">&lt;p&gt;</a></code> is a paragraph element; browsers automatically add a single blank line before and after each
+          <li><code><a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank">&lt;br&gt;</a></code> is a single line break</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">&lt;a&gt;</a></code> is a hyperlink; the href attribute specifies the URL of the page the link goes to</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_comment.asp" target="_blank">&lt;!--  --&gt;</a></code> are the brackets which surround a comment in HTML</li>
+        </ul>
+
+        <h3>Semantic HTML</h3>
+        <ul>
+          <li><code><a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank">&lt;header&gt;</a></code> defines a header for a document or section, often containting heading elements such as &lt;h1&gt; or &lt;h2&gt;</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank">&lt;nav&gt;</a></code> defines a set of navigation links</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_section.asp" target="_blank">&lt;section&gt;</a></code> defines a section in a document</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank">&lt;article&gt;</a></code> defines independent, self-contained content</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_footer.asp" target="_blank">&lt;footer&gt;</a></code> defines a footer for a document or section</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank">&lt;aside&gt;</a></code> defines content aside from the main content</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank">&lt;details&gt;</a></code> defines additional details that the user can view or hide</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&lt;figcaption&gt;</a></code> defines a caption for a <code>&lt;figure&gt;</code> element</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&lt;figure&gt;</a></code> specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_main.asp" target="_blank">&lt;main&gt;</a></code> specifies the main content of a document</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank"&lt;>&lt;mark&gt;</a></code> defines highlighted text</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_summary.asp" target="_blank">&lt;summary&gt;</a></code> defines a visible heading for a <code>&lt;details&gt;</code> element</li>
+          <li><code><a href="https://www.w3schools.com/tags/tag_time.asp" target="_blank">&lt;time&gt;</a></code> defines a specific time (or datetime)</li>
+        </ul>
+
+        <h3>HTML Forms</h3>
+        <p>Forms are used to collect user inputs. Below is an example of a simple HTML form:</p>
+        <pre><code>&lt;form action="/submit-form" method="post"&gt;
+&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name" placeholder="Jane Doe" required&gt;
+&lt;br&gt;
+          
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" placeholder="janedoe@strangemail.com" required&gt;
+&lt;br&gt;
+        
+&lt;label for="age"&gt;Age:&lt;/label&gt;
+&lt;input type="number" id="age" name="age" placeholder="25"&gt;
+&lt;br&gt;
+        
+&lt;label for="gender"&gt;Gender:&lt;/label&gt;
+&lt;select id="gender" name="gender"&gt;
+  &lt;option value="male"&gt;Male&lt;/option&gt;
+  &lt;option value="female"&gt;Female&lt;/option&gt;
+  &lt;option value="other"&gt;Other&lt;/option&gt;
+&lt;/select&gt;
+&lt;br&gt;
+        
+&lt;label for="comments"&gt;Comments:&lt;/label&gt;
+&lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;
+&lt;br&gt;
+        
+&lt;label for="newsletter"&gt;Subscribe to newsletter:&lt;/label&gt;
+&lt;input type="checkbox" id="newsletter" name="newsletter"&gt;
+&lt;br&gt;
+        
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+        <form action="/submit-form" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+          <br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="janedoe@strangemail.com" required>
+          <br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" placeholder="25">
+          <br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+          <br>
+
+          <label for="newsletter">Subscribe to newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <br>
+
+          <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <h5>This form looks cursed, but don't worry! We'll be revisiting it later.</h5>
+        <br>
+
+        <h3>HTML Tables</h3>
+        <p>Tables are used to display data in a tabular format. Below is an example of a simple HTML table:</p>
+        <pre><code>&lt;table&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Dani&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Sarah&lt;/td&gt;
+    &lt;td&gt;28&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dani</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Sarah</td>
+              <td>28</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h5>This table looks cursed, but don't worry! We'll be revisiting it later.</h5>
+        <br>
+        <h3>HTML Lists</h3>
+        <p>HTML supports ordered (numbered) and unordered (bulleted) lists. Below are examples of each:</p>
+        <pre><code>&lt;h3&gt;Grocery List&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bananas&lt;/li&gt;
+&lt;li&gt;Crackers&lt;/li&gt;
+&lt;li&gt;Butter&lt;/li&gt;
+&lt;/ul&gt;
+          
+&lt;h4&gt;Top 3 Games&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Dicey Dungeons&lt;/li&gt;
+&lt;li&gt;Genshin Impact&lt;/li&gt;
+&lt;li&gt;Life is Strange&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <p>Grocery List</p>
+        <ul>
+          <li>Bananas</li>
+          <li>Crackers</li>
+          <li>Butter</li>
+        </ul>
+
+        <p>Top 3 Games</p>
+        <ol>
+          <li>Dicey Dungeons</li>
+          <li>Genshin Impact</li>
+          <li>Life is Strange</li>
+        </ol>
+
+        <h5>Note that the unordered list uses stars for bullet points. This is because of the CSS below that applies
+          to all unordered list items in this doc.</h5>
+        <pre><code>ul li::before {
+content: "✦";
+}</code></pre>
+        <br>
+
+
+        <h3>HTML Media</h3>
+        <p>HTML supports various media elements, such as images, audio, and video. Here are examples:</p>
+        <h4>Image</h4>
+        <pre><code>&lt;img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="An image of a silly cat with an apple" width="300" height="200"&gt;</code></pre>
+        <img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="An image of a silly cat"
+          width="200" height="200"><br>
+        <br>
+        <h4>Audio</h4>
+        <pre><code>&lt;audio controls&gt;
+&lt;source src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+        <audio controls>
+          <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+        <br>
+        <br>
+        <h4>Video</h4>
+        <pre><code>&lt;video width="200px" controls&gt;
+&lt;source src="videos/crow.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+        <video width="200px" controls>
+          <source src="videos/crow.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <br><br>
+
+        <h4>IFrame</h4>
+        <pre><code>&lt;iframe width="560" height="315" 
+src="https://www.youtube.com/embed/84Vi1Mbhzsw" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/84Vi1Mbhzsw" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <br>
+        <h5>Fun fact: this is my reaction to learning React.</h5>
+        <br>
+        <h3>HTML Canvas</h3>
+        <p>The HTML
+          <code>&lt;<a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">canvas</a>&gt;</code>
+          element is used to draw graphics on a web page via JavaScript.</p>
+        <pre><code>&lt;canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+// Get the canvas element by its ID
+var canvas = document.getElementById('myCanvas');
+// Get the 2D drawing context
+var ctx = canvas.getContext('2d');
+
+// Set the fill style to a color
+ctx.fillStyle = '#00BEEF';
+// Draw a filled rectangle
+ctx.fillRect(10, 10, 150, 100);
+
+// Set the stroke style to a color
+ctx.strokeStyle = '#FFFFFF';
+// Draw a rectangle outline
+ctx.strokeRect(200, 10, 150, 100);
+
+// Set the font style
+ctx.font = '20px Arial';
+// Draw text on the canvas
+ctx.fillText('Hello Canvas', 50, 180);
+&lt;/script&gt;</code></pre>
+        <canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"></canvas>
+        <script>
+          // Get the canvas element by its ID
+          var canvas = document.getElementById('myCanvas');
+          // Get the 2D drawing context
+          var ctx = canvas.getContext('2d');
+
+          // Set the fill style to a color
+          ctx.fillStyle = '#00BEEF';
+          // Draw a filled rectangle
+          ctx.fillRect(10, 10, 150, 100);
+
+          // Set the stroke style to a color
+          ctx.strokeStyle = '#FFFFFF';
+          // Draw a rectangle outline
+          ctx.strokeRect(200, 10, 150, 100);
+
+          // Set the font style
+          ctx.font = '20px Arial';
+          // Draw text on the canvas
+          ctx.fillText('Hello Canvas', 50, 180);
+        </script>
+        <br><br>
+
+        <h3>HTML Attributes</h3>
+        <p>Attributes provide additional information about HTML elements. They are always included in the opening tag
+          and usually come in name/value pairs like <code>name="value"</code>. Some common attributes are listed
+          below. Each of these attributes (except for alt) are <a
+            href="https://www.w3schools.com/tags/ref_standardattributes.asp">global</a>, meaning they can be used
+          universally with all HTML elements.</p>
+        <ul>
+          <li><code><a href="https://www.w3schools.com/tags/att_global_class.asp" target="_blank">class</a></code>:
+            Specifies one or more class names for an element (used for CSS and JavaScript).</li>
+          <li><code><a href="https://www.w3schools.com/tags/att_global_id.asp" target="_blank">id</a></code>:
+            Specifies a unique id for an element (used for CSS and JavaScript).</li>
+          <li><code><a href="https://www.w3schools.com/tags/att_global_style.asp" target="_blank">style</a></code>:
+            Specifies an inline CSS style for an element.</li>
+          <li><code><a href="https://www.w3schools.com/tags/att_global_title.asp" target="_blank">title</a></code>:
+            Specifies extra information about an element (displayed as a tooltip).</li>
+          <li><code><a href="https://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt</a></code>: Specifies
+            an alternative text for images, if the image cannot be displayed.</li>
+        </ul>
+
+        <p>Note that a range of attributes can be used for different elements. For example, if you'd like to add
+          styling to an element without using a class or id, you can use the style tag. </p>
+        <pre><code>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="navbar.js"></script>
+</body>
+
+</html>
