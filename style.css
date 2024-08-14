@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 body {
   background-color: #1b1b1b;
   color: #ffffff;
@@ -84,32 +88,32 @@ ul li::before {
 }
 
 a {
-  color: #00beef;
+  color: #aceeff;
   font-weight: bold !important;
   text-decoration: solid;
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
-h1 { 
-  font-size: 40px !important;
+a:hover {
+  color: #5887c5
+}
+
+h1 {
+  font-size: 36px !important;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 36px !important;
+  font-size: 24px;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
+  color: #dadada;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-h5 {
   color: #bffbff;
   font-size: 16px;
   font-style: italic;

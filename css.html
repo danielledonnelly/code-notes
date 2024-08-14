@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Notes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <div id="navbar"></div> <!-- This is where the navbar will be inserted -->
+    <div class="content p-4" id="main-doc">
+      <h1>CSS</h1>
+      <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Below are some common concepts and properties.</p>
+      
+      <h2>Selectors</h2>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Selectors</a></code>: Used to select the HTML element(s) you want to style.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/sel_element.asp" target="_blank">Element Selector</a></code>: Selects all elements of a given type (e.g., <code>p</code>).</li>
+        <li><code><a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">Class Selector</a></code>: Selects all elements with a given class (e.g., <code>.classname</code>).</li>
+        <li><code><a href="https://www.w3schools.com/cssref/sel_id.asp" target="_blank">ID Selector</a></code>: Selects a single element with a given ID (e.g., <code>#idname</code>).</li>
+        <li><code><a href="https://www.w3schools.com/cssref/sel_attribute.asp" target="_blank">Attribute Selector</a></code>: Selects elements with a specific attribute (e.g., <code>[type="text"]</code>).</li>
+      </ul>
+
+      <h2>Box Model</h2>
+      <p>The CSS <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Box Model</a> describes the rectangular boxes generated for elements in the document tree and consists of: margins, borders, padding, and the actual content.</p>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">Margin</a></code>: The outermost layer, used to create space around elements.</li>
+        <li><code><a href="https://www.w3schools.com/css/css_padding.asp" target="_blank">Padding</a></code>: The space between the content and the border of an element.</li>
+        <li><code><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">Border</a></code>: The line surrounding the padding (if any) and content.</li>
+      </ul>
+      
+      <img src="https://miro.medium.com/v2/resize:fit:408/1*sKnLrT1TtqWDZg7GWoBCow.png" width="400" height="200">
+      <br><br>
+      
+      <h2>Common Properties</h2>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_background-color.asp" target="_blank">background-color</a></code>: Sets the background color of an element.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_font_font-family.asp" target="_blank">font-family</a></code>: Specifies the font for an element.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank">text-align</a></code>: Specifies the horizontal alignment of text.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_pos_position.asp" target="_blank">position</a></code>: Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></code>: Sets the width of an element.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></code>: Sets the height of an element.</li>
+      </ul>
+
+      <h2>Flexbox</h2>
+      <p>CSS Flexbox is a layout model that allows for the easy alignment of elements within a container.</p>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flexbox</a></code>: A layout model for designing complex layouts with ease.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">flex</a></code>: A shorthand property for flex-grow, flex-shrink, and flex-basis.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">justify-content</a></code>: Aligns the flexible container’s items when the items do not use all available space on the main-axis.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">align-items</a></code>: Aligns items along the cross-axis.</li>
+      </ul>
+
+      <h2>Grid Layout</h2>
+      <p>CSS Grid Layout is a two-dimensional layout system for the web.</p>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Grid Layout</a></code>: A two-dimensional layout system for web design.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_grid.asp" target="_blank">grid</a></code>: A shorthand property for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_grid-template-columns.asp" target="_blank">grid-template-columns</a></code>: Defines the columns of the grid with a space-separated list of values.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/pr_grid-template-rows.asp" target="_blank">grid-template-rows</a></code>: Defines the rows of the grid with a space-separated list of values.</li>
+      </ul>
+
+      <h2>Media Queries</h2>
+      <p>Media queries are used to apply different styles for different devices or screen sizes.</p>
+      <ul>
+        <li><code><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media Queries</a></code>: Used to apply different styles for different devices or screen sizes.</li>
+        <li><code><a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">@media</a></code>: A rule used to apply styles based on the result of one or more media queries.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="navbar.js"></script>
+</body>
+
+</html>
