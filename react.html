@@ -15,11 +15,60 @@
     <div class="content p-4" id="main-doc">
       <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
         <h1>React</h1>
-        <p>React is a JavaScript library for building user interface.</p>
-        <p>It is notable for its use in crafting single-page apps and creating reusable UI components.</p>
+        <p>React is a JavaScript library for building user interfaces.</p>
+        <p>It is notable for its use in crafting single-page apps and creating reusable UI components through the use of JSX.</p>
+        <p>JSX allows you to write HTML within JavaScript. It converts HTML tags into react elements.</p>
 
-        <h2>Getting Started</h2>
-        <p>Before you get bstarted, ensure you have Node.js installed. Node.js comes with npm (Node Package Manager), which is used to install React.</p>
+        <h3>JSX Syntax</h3>
+        <p>Here’s a simple example of JSX.</p><pre><code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code></pre>
+        <p>You can embed JavaScript expressions inside JSX by wrapping them in curly braces. The Example below will render "Hello, React Developer!" on the page.</p>
+        <pre><code>const name = 'React Developer';<br>const element = &lt;h1&gt;Hello, {name}!&lt;/h1&gt;;</code></pre>
+
+        <p>After compilation, JSX expressions become regular JavaScript objects. This means you can use JSX inside if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:</p>
+        <pre><code>function getGreeting(user) {
+  if (user) {
+    return &lt;h1&gt;Hello, {user}!&lt;/h1&gt;;
+  }
+  return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;
+}</code></pre>
+
+<h2>JSX Attributes</h2>
+<p>You can pass attributes to JSX elements just like you do in HTML:</p>
+<pre><code>const element = &lt;img src="logo.png" alt="Logo" /&gt;;
+</code></pre>
+<p>Note that in JSX, you use `camelCase` for naming attributes instead of `kebab-case`. For example, `class` in HTML becomes `className` in JSX:</p>
+<pre><code>const element = &lt;div className="container"&gt;&lt;/div&gt;;
+</code></pre>
+
+<h2>JSX Children</h2>
+<p>If a tag is empty, you can close it immediately with `/>`, like XML:</p>
+<pre><code>const element = &lt;img src="logo.png" alt="Logo" /&gt;;
+</code></pre>
+<p>You can also nest elements inside other elements:</p>
+<pre><code>const element = (
+  &lt;div&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to learning React.&lt;/p&gt;
+  &lt;/div&gt;
+);</code></pre>
+
+<h2>JSX and JavaScript Functions</h2>
+<p>JSX can represent JavaScript functions as well:</p>
+<pre><code>function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+const element = &lt;h1&gt;Hello, {formatName(user)}!&lt;/h1&gt;;
+</code></pre>
+<p>In this example, the `formatName` function is used inside JSX to generate a greeting.</p>
+
+        <h2>Creating a React Application</h2>
+        <p>Ensure you have Node.js installed. Node.js comes with npm (Node Package Manager), which is used to install React.</p>
         <p>To create your React application, open your terminal in Visual Studio Code; enter and run the following command.</p>
         <p>Note that you can replace my-react-app to any name you want to use for the project's folder.</p>
         <pre><code>npx create-react-app my-react-app</code></pre>
@@ -28,8 +77,12 @@
         <p>Now that the project is set up, you can start the sever with the command below.</p>
         <pre><code>npm start</code></pre>
 
-        <h2>React Structure</h2>
-        <img src="https://blog.webdevsimplified.com/articleAssets/2022-07/react-folder-structure/beginner.png" width="200">
+        
+        
+        
+        <!-- <h2>React Structure</h2>
+        <img src="https://blog.webdevsimplified.com/articleAssets/2022-07/react-folder-structure/beginner.png" width="200"> -->
+        <p></p>
       </div>
     </div>
   </div>
